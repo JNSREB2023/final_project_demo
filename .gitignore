@@ -11,3 +11,4 @@ wheels/
 
 /.quarto/
 /docs/site_libs/
+.env
