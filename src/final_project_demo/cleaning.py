@@ -209,3 +209,12 @@ def merge_data(sensor_avg, state_info):
 	state_df['Avg_PM25'] = state_df["States"].map(mean)
 
 	return state_df.to_csv(state_info, index=False)
+
+
+def cleaning_pipeline():
+    sensor_avgs = pd.read_csv('../data/US_Locations_PM25_With_Averages.csv')
+    states_df = pd.read_csv('../data/States_Data.csv')
+
+    final_data_set = merge_data(sensor_avgs, states_df)
+
+    return final_data_set

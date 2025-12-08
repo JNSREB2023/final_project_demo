@@ -3,12 +3,16 @@ requires = ["uv_build >= 0.9.5, <0.10.0"]
 build-backend = "uv_build"
 
 [project]
-name = "final-project-demo"
+name = "USASTATS"
 version = "0.1.0"
-description = "Add your description here"
+description = "This package provides data cleaning and visualization tools for US statistics datasets."
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
+authors = [
+    { name = "Rebekah Jensen", email = "rebekahdawnjensen@gmail.com"}
+    { name = "Noah Champagne", email = "}
+]
 classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent"
@@ -19,4 +23,11 @@ dependencies = [
     "numpy>=2.3.5",
     "pandas>=2.3.3",
     "streamlit>=1.40.0",
+    "us",
+    "plotly",
+    "time",
+    "requests",
+    "httpx",
+    "geopandas",
+    "Point"
 ]

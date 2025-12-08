@@ -1,4 +1,5 @@
 {
     "inlineChat.notebookAgent": true,
-    "chat.customAgentInSubagent.enabled": true
+    "chat.customAgentInSubagent.enabled": true,
+    "python.REPL.enableREPLSmartSend": false
 }
